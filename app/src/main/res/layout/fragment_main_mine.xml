@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bizbase_comm_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/hard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_340px"
+                    android:background="@drawable/mime_background"
+                    android:paddingTop="@dimen/dd_dimen_20px">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_notification_container"
+                        android:layout_width="@dimen/dd_dimen_44px"
+                        android:layout_height="@dimen/dd_dimen_44px"
+                        android:layout_above="@id/ly_user_info"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="@dimen/dd_dimen_34px"
+                        android:layout_marginRight="@dimen/dd_dimen_34px"
+                        android:background="@drawable/icon_mine_home_message"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/iv_unread_msg_dot"
+                            android:layout_width="@dimen/dd_dimen_15px"
+                            android:layout_height="@dimen/dd_dimen_15px"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/dd_dimen_4px"
+                            android:layout_marginRight="@dimen/dd_dimen_4px"
+                            android:background="@drawable/red_dot"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ly_user_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true">
+
+                        <ImageView
+                            android:id="@+id/iv_user_header"
+                            android:layout_width="@dimen/dd_dimen_100px"
+                            android:layout_height="@dimen/dd_dimen_100px"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dd_dimen_40px"
+                            android:src="@drawable/icon_mine_head_avatar" />
+
+                        <TextView
+                            android:id="@+id/tv_user_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dd_dimen_30px"
+                            android:layout_toRightOf="@id/iv_user_header"
+                            android:text="登录/注册"
+                            android:textColor="@color/bizbase_white"
+                            android:textSize="@dimen/dd_dimen_40px" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dd_dimen_30px"
+                            android:layout_toRightOf="@id/tv_user_status"
+                            android:background="@drawable/more_arrow" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_welfare_center_banner"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/balance_card"
+                android:layout_marginLeft="@dimen/dd_dimen_20px"
+                android:layout_marginTop="@dimen/dd_dimen_20px"
+                android:layout_marginRight="@dimen/dd_dimen_20px"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/items"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_welfare_center_banner"
+                android:layout_marginLeft="@dimen/dd_dimen_20px"
+                android:layout_marginTop="@dimen/dd_dimen_20px"
+                android:layout_marginRight="@dimen/dd_dimen_20px"
+                android:background="@drawable/common_white_round_bg12"
+                android:orientation="vertical"
+                android:padding="@dimen/dd_dimen_20px">
+
+                <include
+                    android:id="@+id/rl_order_info"
+                    layout="@layout/item_mine_fragment_layout" />
+
+                <include
+                    android:id="@+id/rl_bill_manager"
+                    layout="@layout/item_mine_fragment_layout" />
+
+                <include
+                    android:id="@+id/fragment_main_exchange_discount"
+                    layout="@layout/item_mine_fragment_layout" />
+
+                <include
+                    android:id="@+id/rl_enterprise"
+                    layout="@layout/item_mine_fragment_layout" />
+
+                <include
+                    android:id="@+id/rl_help_feedback"
+                    layout="@layout/item_mine_fragment_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_mine_layout_second"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/items"
+                android:layout_marginLeft="@dimen/dd_dimen_20px"
+                android:layout_marginTop="@dimen/dd_dimen_20px"
+                android:layout_marginRight="@dimen/dd_dimen_20px"
+                android:background="@drawable/common_corners12_white_bg"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dd_dimen_20px"
+                android:paddingTop="@dimen/dd_dimen_2px"
+                android:paddingRight="@dimen/dd_dimen_20px"
+                android:paddingBottom="@dimen/dd_dimen_2px"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/rl_retail_enter"
+                    layout="@layout/item_mine_fragment_layout" />
+
+                <include
+                    android:id="@+id/rl_report_with_encourage"
+                    layout="@layout/item_mine_fragment_layout"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/balance_card"
+                layout="@layout/item_mine_center_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hard"
+                android:layout_marginLeft="@dimen/dd_dimen_20px"
+                android:layout_marginTop="-38.0dip"
+                android:layout_marginRight="@dimen/dd_dimen_20px" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dd_dimen_20px"
+            android:layout_marginTop="@dimen/dd_dimen_30px"
+            android:layout_marginRight="@dimen/dd_dimen_20px"
+            android:layout_marginBottom="@dimen/dd_dimen_30px"
+            android:src="@drawable/recommend_bg"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <include
+            layout="@layout/layout_view_welfare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dd_dimen_80px" />
+    </LinearLayout>
+</ScrollView>

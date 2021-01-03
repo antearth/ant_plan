@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/balance_card"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_white_round_bg12">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_140px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/account_balance_ll"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/balance_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dd_dimen_44px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dd_dimen_28px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/balance_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="@dimen/dd_dimen_6px"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="@color/bizbase_main_color"
+                    android:textSize="@dimen/dd_dimen_34px" />
+
+                <TextView
+                    android:id="@+id/balance_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="bottom"
+                    android:paddingBottom="@dimen/dd_dimen_3px"
+                    android:text="@string/unit_yuan"
+                    android:textColor="@color/bizbase_main_color"
+                    android:textSize="@dimen/dd_dimen_22px" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/balance_dot"
+                android:layout_width="@dimen/dd_dimen_12px"
+                android:layout_height="@dimen/dd_dimen_12px"
+                android:layout_alignTop="@id/balance_ll"
+                android:layout_toRightOf="@id/balance_ll"
+                android:src="@drawable/red_dot"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dd_dimen_36px"
+                android:layout_below="@id/balance_ll"
+                android:layout_marginTop="@dimen/dd_dimen_12px"
+                android:gravity="center"
+                android:text="@string/account_balance"
+                android:textColor="@color/bizbase_text_black_subtitle"
+                android:textSize="@dimen/dd_dimen_24px" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/dd_dimen_1px"
+            android:layout_height="@dimen/dd_dimen_50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.0"
+            android:background="@color/bizbase_comm_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_coffee_warehouse"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/coffee_warehouse_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dd_dimen_44px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dd_dimen_28px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_coffee_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="@dimen/dd_dimen_6px"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/bizbase_main_color"
+                    android:textSize="@dimen/dd_dimen_34px" />
+
+                <TextView
+                    android:id="@+id/coffee_warehouse_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="bottom"
+                    android:paddingBottom="@dimen/dd_dimen_3px"
+                    android:text="@string/unit_bei"
+                    android:textColor="@color/bizbase_main_color"
+                    android:textSize="@dimen/dd_dimen_22px" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/coffee_warehouse_dot"
+                android:layout_width="@dimen/dd_dimen_12px"
+                android:layout_height="@dimen/dd_dimen_12px"
+                android:layout_alignTop="@id/coffee_warehouse_ll"
+                android:layout_toRightOf="@id/coffee_warehouse_ll"
+                android:src="@drawable/red_dot"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dd_dimen_36px"
+                android:layout_below="@id/coffee_warehouse_ll"
+                android:layout_marginTop="@dimen/dd_dimen_12px"
+                android:gravity="center"
+                android:text="@string/mine_fragment_coffee_package"
+                android:textColor="@color/bizbase_text_black_subtitle"
+                android:textSize="@dimen/dd_dimen_24px" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/dd_dimen_1px"
+            android:layout_height="@dimen/dd_dimen_50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.0"
+            android:background="@color/bizbase_comm_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_coupon"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/coupon_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dd_dimen_44px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dd_dimen_28px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_coupon_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="@dimen/dd_dimen_6px"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/bizbase_main_color"
+                    android:textSize="@dimen/dd_dimen_34px" />
+
+                <TextView
+                    android:id="@+id/coupon_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="bottom"
+                    android:paddingBottom="@dimen/dd_dimen_3px"
+                    android:text="@string/unit_zhang"
+                    android:textColor="@color/bizbase_main_color"
+                    android:textSize="@dimen/dd_dimen_22px" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/coupon_dot"
+                android:layout_width="@dimen/dd_dimen_12px"
+                android:layout_height="@dimen/dd_dimen_12px"
+                android:layout_alignTop="@id/coupon_ll"
+                android:layout_toRightOf="@id/coupon_ll"
+                android:src="@drawable/red_dot"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dd_dimen_36px"
+                android:layout_below="@id/coupon_ll"
+                android:layout_marginTop="@dimen/dd_dimen_12px"
+                android:gravity="center"
+                android:text="@string/mine_fragment_coupons"
+                android:textColor="@color/bizbase_text_black_subtitle"
+                android:textSize="@dimen/dd_dimen_24px" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/dd_dimen_1px"
+            android:layout_height="@dimen/dd_dimen_50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.0"
+            android:background="@color/bizbase_comm_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_gift_card"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/gift_card_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dd_dimen_44px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dd_dimen_28px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_gift_card_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="@dimen/dd_dimen_6px"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/bizbase_main_color"
+                    android:textSize="@dimen/dd_dimen_34px" />
+
+                <TextView
+                    android:id="@+id/gift_card_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="bottom"
+                    android:paddingBottom="@dimen/dd_dimen_3px"
+                    android:text="@string/unit_zhang"
+                    android:textColor="@color/bizbase_main_color"
+                    android:textSize="@dimen/dd_dimen_22px" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/giftcard_dot"
+                android:layout_width="@dimen/dd_dimen_12px"
+                android:layout_height="@dimen/dd_dimen_12px"
+                android:layout_alignTop="@id/gift_card_ll"
+                android:layout_toRightOf="@id/gift_card_ll"
+                android:src="@drawable/red_dot"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dd_dimen_36px"
+                android:layout_below="@id/gift_card_ll"
+                android:layout_marginTop="@dimen/dd_dimen_12px"
+                android:gravity="center"
+                android:text="@string/mine_fragment_giftcard"
+                android:textColor="@color/bizbase_text_black_subtitle"
+                android:textSize="@dimen/dd_dimen_24px" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

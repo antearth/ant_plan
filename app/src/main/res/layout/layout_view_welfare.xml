@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_welfare"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_welfare"
+        android:layout_width="@dimen/dd_dimen_204px"
+        android:layout_height="@dimen/dd_dimen_112px"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/dd_dimen_48px"
+        android:background="@drawable/welfare_tips_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/welfare_tips_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxEms="6"
+            android:textColor="@color/bizbase_white"
+            android:textSize="@dimen/dd_dimen_22px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dd_dimen_10px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/welfare_tips_discount_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/bizbase_white"
+                android:textSize="@dimen/dd_dimen_22px" />
+
+            <TextView
+                android:id="@+id/welfare_tips_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#ffffc400"
+                android:textSize="@dimen/dd_dimen_22px" />
+
+            <TextView
+                android:id="@+id/welfare_tips_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/bizbase_white"
+                android:textSize="@dimen/dd_dimen_22px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_welfare"
+        android:layout_width="@dimen/dd_dimen_132px"
+        android:layout_height="@dimen/dd_dimen_189px"
+        android:layout_marginLeft="@dimen/dd_dimen_45px" />
+</LinearLayout>

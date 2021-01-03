@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dd_dimen_88px"
+    android:background="@color/bizbase_white">
+
+    <ImageView
+        android:id="@+id/item_mine_fragment_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dd_dimen_26px"
+        android:layout_marginRight="@dimen/dd_dimen_30px" />
+
+    <TextView
+        android:id="@+id/item_mine_fragment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dd_dimen_100px"
+        android:layout_marginLeft="@dimen/dd_dimen_100px"
+        android:text=""
+        android:textColor="@color/bizbase_text_black_title"
+        android:textSize="@dimen/dd_dimen_28px" />
+
+    <TextView
+        android:id="@+id/item_mine_fragment_content_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dd_dimen_6px"
+        android:layout_toRightOf="@id/item_mine_fragment_content"
+        android:text=""
+        android:textSize="@dimen/dd_dimen_28px"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/item_mine_fragment_coffee_shop_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dd_dimen_10px"
+        android:layout_marginLeft="@dimen/dd_dimen_10px"
+        android:layout_toEndOf="@id/item_mine_fragment_content"
+        android:layout_toRightOf="@id/item_mine_fragment_content"
+        android:background="@drawable/red_dot"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/item_mine_fragment_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dd_dimen_10px"
+        android:layout_marginRight="@dimen/dd_dimen_10px"
+        android:background="@mipmap/more_arrow2" />
+
+    <TextView
+        android:id="@+id/item_mine_fragment_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dd_dimen_20px"
+        android:layout_marginRight="@dimen/dd_dimen_20px"
+        android:layout_toStartOf="@id/item_mine_fragment_arrow"
+        android:layout_toLeftOf="@id/item_mine_fragment_arrow"
+        android:textColor="@color/bizbase_text_black_desc"
+        android:textSize="@dimen/dd_dimen_26px" />
+</RelativeLayout>

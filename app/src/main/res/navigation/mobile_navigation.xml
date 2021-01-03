@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.fxyublib.android.fxappdailyschedule.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_main_home" />
+
+    <fragment
+        android:id="@+id/navigation_drink"
+        android:name="com.fxyublib.android.fxappdailyschedule.ui.drink.DrinkFragment"
+        android:label="@string/title_drink"
+        tools:layout="@layout/fragment_main_drink" />
+
+    <fragment
+        android:id="@+id/navigation_shop"
+        android:name="com.fxyublib.android.fxappdailyschedule.ui.shop.ShopFragment"
+        android:label="@string/title_shop"
+        tools:layout="@layout/fragment_main_shop" />
+
+    <fragment
+        android:id="@+id/navigation_shopping"
+        android:name="com.fxyublib.android.fxappdailyschedule.ui.shopping.ShoppingFragment"
+        android:label="@string/title_shopping"
+        tools:layout="@layout/fragment_main_shopping" />
+
+    <fragment
+        android:id="@+id/navigation_mine"
+        android:name="com.fxyublib.android.fxappdailyschedule.ui.mine.MineFragment"
+        android:label="@string/title_mine"
+        tools:layout="@layout/fragment_main_mine" />
+</navigation>
