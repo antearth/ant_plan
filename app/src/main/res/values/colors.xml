@@ -15,6 +15,9 @@
     <color name="cz.gray.bg" tools:ignore="MissingDefaultResource">#fff4f7fa</color>
     <color name="cz.gray.edit.bg" tools:ignore="MissingDefaultResource">#fff5f7fa</color>
     <color name="cz.gray.edit.border" tools:ignore="MissingDefaultResource">#ffe2e6ed</color>
+    <color name="line_color">#e7e7e7</color>
+    <color name="content_background">#f2f2f2</color>
+    <color name="solar_background">#009988</color>
 
     <color name="event_color_01">#59dbe0</color>
     <color name="event_color_02">#f57f68</color>
